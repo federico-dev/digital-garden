@@ -1,0 +1,32 @@
+:root {
+  --crema: #faf1e0; --carta: #fffaf0;
+  --rosa: #e8789a; --rosa-scuro: #a8325f;
+  --blu: #2c4f8f; --blu-chiaro: #cfe0f7;
+  --inchiostro: #1f2a44;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --ui: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { background: var(--crema); color: var(--inchiostro); font-family: var(--serif); font-size: 18px; line-height: 1.65; }
+body { margin: 0 auto; max-width: 62rem; padding: 1.5rem 1.25rem 4rem; }
+a { color: var(--blu); text-underline-offset: 3px; }
+a:hover { color: var(--rosa-scuro); }
+:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
+.brand { font-family: var(--ui); font-weight: 600; text-decoration: none; color: var(--inchiostro); }
+h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; font-weight: 600; letter-spacing: -0.02em; margin: 2.5rem 0 1rem; }
+.intro p { max-width: 38rem; font-size: 1.1rem; }
+.grid { list-style: none; padding: 0; margin: 2.5rem 0 0; columns: 3 15rem; column-gap: 1.25rem; }
+.grid li { break-inside: avoid; margin-bottom: 1.25rem; }
+.card { display: block; padding: 1.1rem 1.2rem; text-decoration: none; color: inherit; background: var(--carta); }
+.card h2 { font-size: 1.3rem; line-height: 1.25; margin: 0.4rem 0; }
+.card:hover h2 { color: var(--rosa-scuro); }
+.card.seedling { border: 2px dashed var(--rosa); border-radius: 18px 4px 18px 4px; }
+.card.budding { border: 2px solid var(--blu); border-radius: 4px; }
+.card.evergreen { border: 2px solid var(--blu); background: var(--blu-chiaro); border-radius: 4px 18px 4px 18px; }
+.stage, .stage-tag, .meta { font-family: var(--ui); font-size: 0.85rem; }
+.stage-tag { margin: 2.5rem 0 0; color: var(--rosa-scuro); }
+.meta { color: #55607a; }
+.page { max-width: 40rem; }
+.prose h2 { font-size: 1.5rem; margin: 2.2rem 0 0.5rem; }
+.prose blockquote { margin: 1.2rem 0; padding-left: 1rem; border-left: 3px solid var(--rosa); }
+.back { margin-top: 3rem; font-family: var(--ui); }
